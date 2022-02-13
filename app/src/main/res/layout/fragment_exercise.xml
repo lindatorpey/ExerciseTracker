@@ -8,7 +8,7 @@
     tools:context=".Fragments.ExerciseFragment">
 
     <TextView
-        android:id="@+id/donateTitle"
+        android:id="@+id/exerciseTitle"
         android:layout_width="188dp"
         android:layout_height="30dp"
         android:layout_alignParentEnd="true"
@@ -28,12 +28,12 @@
         app:layout_constraintVertical_bias="0.017" />
 
     <TextView
-        android:id="@+id/donateSubtitle"
+        android:id="@+id/exerciseSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/donateTitle"
+        android:layout_alignEnd="@+id/exerciseTitle"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/donateTitle"
+        android:layout_below="@+id/exerciseTitle"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -71,7 +71,7 @@
         android:layout_height="128dp"
         android:layout_above="@+id/progressBar"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/donateSubtitle"
+        android:layout_below="@+id/exerciseSubtitle"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/donateTitle"
+        app:layout_constraintTop_toTopOf="@+id/exerciseTitle"
         app:layout_constraintVertical_bias="0.276">
 
         <RadioButton
@@ -103,7 +103,7 @@
         android:id="@+id/amountPicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/donateSubtitle"
+        android:layout_alignEnd="@+id/exerciseSubtitle"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -121,7 +121,7 @@
         android:layout_width="349dp"
         android:layout_height="14dp"
         android:layout_above="@+id/exerciseButton"
-        android:layout_alignEnd="@+id/donateSubtitle"
+        android:layout_alignEnd="@+id/exerciseSubtitle"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -206,3 +206,4 @@
         android:hint="@string/enter_amount"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
