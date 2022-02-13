@@ -1,4 +1,4 @@
-package ie.wit.exercisetracker
+package ie.wit.exercisetracker.Fragments
 
 import android.os.Bundle
 import android.view.*
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
+import ie.wit.exercisetracker.R
 import ie.wit.exercisetracker.adapters.ExerciseAdapter
 import ie.wit.exercisetracker.databinding.FragmentReportBinding
 import ie.wit.exercisetracker.main.ExerciseXApp
