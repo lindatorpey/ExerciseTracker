@@ -33,14 +33,15 @@ class ExerciseFragment : Fragment() {
         val root = fragBinding.root
         activity?.title = getString(R.string.action_exercise)
 
-        fragBinding.progressBar.max = 10000
-        fragBinding.distancePicker.minValue = 1
-        fragBinding.distancePicker.maxValue = 30
+        fragBinding.progressBar.max = 1000
+        fragBinding.amountPicker.minValue = 1
+        fragBinding.amountPicker.maxValue = 30
 
-        fragBinding.distancePicker.setOnValueChangedListener { _, _, newVal ->
+        fragBinding.amountPicker.setOnValueChangedListener { _, _, newVal ->
             //Display the newly selected number to paymentAmount
             fragBinding.logAmount.setText("$newVal")
         }
+        setButtonListener(fragBinding)
         return root;
     }
     override fun onDestroyView() {
@@ -53,21 +54,7 @@ class ExerciseFragment : Fragment() {
         fragBinding.progressBar.progress = totalExercised
         fragBinding.totalSoFar.text = "$$totalExercised"
     }
-    fun setButtonListener(layout: FragmentExerciseBinding) {
-        layout.exerciseButton.setOnClickListener {
-            val amount = if (layout.logAmount.text.isNotEmpty())
-                layout.logAmount.text.toString().toInt() else layout.distancePicker.value
-            if(totalExercised >= layout.progressBar.max)
-                Toast.makeText(context,"Excercise Amount Exceeded!",Toast.LENGTH_LONG).show()
-            else {
-                val logmethod = if(layout.logMethod.checkedRadioButtonId == R.id.logWalk) "Walk" else "Run"
-                totalExercised += amount
-                layout.totalSoFar.text = "$$totalExercised"
-                layout.progressBar.progress = totalExercised
-                app.exerciseStore.create(ExerciseModel(logmethod = logmethod ,amount = amount))
-            }
-        }
-    }
+
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_exercise, menu)
         super.onCreateOptionsMenu(menu, inflater)
@@ -84,4 +71,21 @@ class ExerciseFragment : Fragment() {
                 arguments = Bundle().apply {}
             }
     }
+    fun setButtonListener(layout: FragmentExerciseBinding) {
+        layout.exerciseButton.setOnClickListener {
+            val amount = if (layout.logAmount.text.isNotEmpty())
+                layout.logAmount.text.toString().toInt() else layout.amountPicker.value
+            if(totalExercised >= layout.progressBar.max)
+                Toast.makeText(context,"Excercise Amount Exceeded!",Toast.LENGTH_LONG).show()
+            else {
+                val logmethod = if(layout.logMethod.checkedRadioButtonId == R.id.logWalk) "Walk" else "Run"
+                totalExercised += amount
+                layout.totalSoFar.text = "$$totalExercised"
+                layout.progressBar.progress = totalExercised
+                app.exerciseStore.create(ExerciseModel(logmethod = logmethod ,amount = amount))
+            }
+        }
+    }
+
 }
+
