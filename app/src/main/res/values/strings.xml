@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ExerciseTracker</string>
+    <string name="exerciseTitle">Welcome User</string>
+    <string name="exerciseSubtitle">Log your walk/run</string>
+    <string name="exerciseButton">Log</string>
+    <string name="logWalk">Walk</string>
+    <string name="logRun">Run</string>
+    <string name="distance">Distance</string>
+    <string name="total">Distance so Far</string>
+    <string name="totalSoFar">Total</string>
+    <string name="reportTitle">Exercise Report</string>
+    <string name="defaultDistance">00</string>
+    <string name="defaultMethod">N/A</string>
+    <string name="enter_amount">Enter Distance</string>
+
+    <string name="action_exercise">Exercise</string>
+    <string name="action_report">Report</string>
+    <string name="action_share">Share</string>
+    <string name="action_send">Send</string>
+    <string name="group_communicate">Communicate</string>
+
+    <string name="nav_header_title">ExerciseX (Lab)</string>
+    <string name="nav_header_subtitle">Get Moving</string>
+    <string name="nav_header_desc">Navigation header</string>
+</resources>
