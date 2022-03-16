@@ -3,20 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/drawable/side_nav_bar.xml" value="0.221875" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/activity_exercise.xml" value="0.353125" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/activity_home.xml" value="0.1984375" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/activity_report.xml" value="0.20208333333333334" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/app_bar_home.xml" value="0.1984375" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/card_exercise.xml" value="0.20208333333333334" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/content_home.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/fragment_exercise.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/fragment_report.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/home.xml" value="0.1984375" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/layout/nav_header.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/menu/menu_exercise.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/menu/menu_report.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/35386/AndroidStudioProjects/ExerciseTracker/app/src/main/res/menu/nav_drawer_menu.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/content_main.xml" value="0.22" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_leader_board.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_race_list.xml" value="0.22" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_racelog.xml" value="0.2421875" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_sessionlist.xml" value="0.22" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/menu/activity_main_drawer.xml" value="0.3671875" />
       </map>
     </option>
   </component>

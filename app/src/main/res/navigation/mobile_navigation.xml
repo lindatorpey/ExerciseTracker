@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ie.wit.tritrack.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_session_list"
+        android:name="ie.wit.tritrack.ui.sessionlist.SessionListFragment"
+        android:label="@string/menu_sessionlist"
+        tools:layout="@layout/fragment_sessionlist" />
+
+    <fragment
+        android:id="@+id/nav_racelog"
+        android:name="ie.wit.tritrack.ui.racelog.RaceLogFragment"
+        android:label="@string/menu_racelog"
+        tools:layout="@layout/fragment_racelog" />
+    <fragment
+        android:id="@+id/nav_leaderboard"
+        android:name="ie.wit.tritrack.ui.leaderboard.LeaderBoard"
+        android:label="fragment_leader_board"
+        tools:layout="@layout/fragment_leader_board" />
+    <fragment
+        android:id="@+id/nav_racelist"
+        android:name="ie.wit.tritrack.ui.racelist.RaceListFragment"
+        android:label="fragment_race_list"
+        tools:layout="@layout/fragment_race_list" />
+</navigation>
+
