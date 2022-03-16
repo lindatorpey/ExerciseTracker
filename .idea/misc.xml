@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
         <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/content_main.xml" value="0.22" />
         <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/35386/AndroidStudioProjects/TriTrack/app/src/main/res/layout/fragment_leader_board.xml" value="0.16666666666666666" />
