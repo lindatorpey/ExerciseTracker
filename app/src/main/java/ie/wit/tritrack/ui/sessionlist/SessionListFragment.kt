@@ -49,7 +49,7 @@ class SessionListFragment : Fragment() {
         return root
     }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_log, menu)
+        inflater.inflate(R.menu.menu_report, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
@@ -60,7 +60,7 @@ class SessionListFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() =
-            LogFragment().apply {
+            SessionListFragment().apply {
                 arguments = Bundle().apply { }
             }
     }

@@ -17,9 +17,6 @@
             android:icon="@drawable/ic_baseline_run_circle_24"
             android:title="@string/menu_racelog" />
 
-        <item
-            android:id="@+id/nav_leaderboard"
-            android:icon="@drawable/ic_baseline_emoji_events_24"
-            android:title="@string/menu_leaderboard" />
+
     </group>
 </menu>

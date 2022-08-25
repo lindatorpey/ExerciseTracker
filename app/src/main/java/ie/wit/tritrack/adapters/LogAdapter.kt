@@ -18,6 +18,7 @@ class LogAdapter constructor(private var logs: List<LogModel>) : RecyclerView.Ad
         holder.bind(log)
     }
     override fun getItemCount(): Int = logs.size
+
     inner class MainHolder(val binding : LogCardBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(log: LogModel){
             binding.logamount.text = log.amount.toString()

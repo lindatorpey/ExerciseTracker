@@ -44,14 +44,7 @@ class LogFragment : Fragment() {
             //textView.text = it
         })
 
-        //fragBinding.progressBar.max = 10000
-        fragBinding.amountPicker.minValue = 1
-        fragBinding.amountPicker.maxValue = 1000
 
-        fragBinding.amountPicker.setOnValueChangedListener { _, _, newVal ->
-            //Display the newly selected number to paymentAmount
-            fragBinding.logTime.setText("$newVal")
-        }
         setButtonListener(fragBinding)
         return root;
     }
@@ -66,15 +59,29 @@ class LogFragment : Fragment() {
 
     fun setButtonListener(layout: FragmentLogBinding) {
         layout.logbutton.setOnClickListener {
+            //Create variable amount and check if text view with log time is not empty
             val amount = if (layout.logTime.text.isNotEmpty())
-                layout.logTime.text.toString().toInt() else layout.amountPicker.value
-            if(timeLogged >= 0)
+                //convert the logtime entered to a string and then to an int, otherwise use 0 as default
+                layout.logTime.text.toString().toInt() else 0
+                //Toast.makeText(context,"Please Enter your Time", Toast.LENGTH_LONG).show()
+            //Check if timelogged(variable created at top of file) is greater than or equal to zero
+            if(amount >= 0)
+                //Pop up that time has been logged
                 Toast.makeText(context,"Time Logged", Toast.LENGTH_LONG).show()
             else {
-                val logmethod = if(layout.logMethod.checkedRadioButtonId == R.id.logRun) "Run" else "Cycle"
+                //create varaible logmethod, check if the radio button is checked on Run, "Run"
+                val logmethod = if(layout.logMethod.checkedRadioButtonId == R.id.logRun)
+                    "Run"
+                else if (
+                    //if the radio button is checked on swim"Swim"
+                    layout.logMethod.checkedRadioButtonId == R.id.logSwim
+                ) { "Swim" }
+                //Otherwise cycle
+                else "Cycle"
+                //Add the amount entered in the text view ot the timelogged variable
                 timeLogged += amount
-                layout.totalTime.text = "$$timeLogged"
-                //layout.progressBar.progress = totalDonated
+                //Change the totalTime text view to the value of the timelogged variable
+                layout.totalTime.text = "$timeLogged"
                 app.logsStore.create(LogModel(logmethod = logmethod,amount = amount))
             }
         }

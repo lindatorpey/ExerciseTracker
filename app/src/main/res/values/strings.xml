@@ -15,8 +15,10 @@
     <string name="logSwim">Swim</string>//Swim Radio Button
     <string name="logRun">Run</string>//Run Radio Button
     <string name="logCycle">Cycle</string>//Cycle Radio Button
-    <string name="homeTitle">Welcome User</string>//Log page welcome message
-    <string name="homeSubtitle">Log Your Training Session</string>//Log page subtitle
+
+    //logfragment strings
+    <string name="homeTitle">Get Moving</string>//Log page welcome message
+    <string name="homeSubtitle">What did you do today?</string>//Log page subtitle
     <string name="amount">Amount</string>
     <string name="trainingButton">LOG</string>//Log page button
     <string name="totalTime">Total Time</string>//Total Time trained
